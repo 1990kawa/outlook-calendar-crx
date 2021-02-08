@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/moment+langs.min.js"></script>
+    <script src="lib/axios.min.js"></script>
+    <script src="lib/util.js"></script>
+    <script src="constants.js"></script>
+    <script src="utils.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="action-bar">
+        <img src="icons/icon_refresh.png" id="sync_now" class="i18n">
+      </div>
+      <div class="popup-title">
+        <a data-href="calendar_ui_url" target="_blank">
+          <span class="i18n" id="logo_text">Reply for Calendar</span>
+        </a>
+      </div>
+    </header>
+    <div class="section-container">
+      <section>
+        <div id="info_bar"></div>
+        <div id="error">
+          <p class="i18n" id="authorization_explanation"></p>
+          <p><button class="button i18n" id="authorization_required">Outlook カレンダーを許可する</button></p>
+          <p>
+            <a class="i18n" id="problems" target="_blank"
+                href="https://github.com/1990kawa/google-calendar-crx/wiki/Troubleshooting">Problems?</a>
+          </p>
+        </div>
+        <div id="calendar-events"></div>
+      </section>
+    </div>
+    </script>
+  </body>
+</html>
